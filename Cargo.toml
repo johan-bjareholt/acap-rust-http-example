@@ -1,0 +1,13 @@
+[package]
+name = "acap_rust_http_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+syslog = "6.0"
+log = "0.4"
+rocket = "0.5.0-rc.2"
+
+[package.metadata.acap]
+post_install_script = "postinstall.sh"
+other_files = ["postinstall.sh", "reverseproxy.conf"]
